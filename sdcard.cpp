@@ -201,8 +201,8 @@ namespace SD {
   * initialises the sd card.
   */
   //% blockId=sd_init
-  //% block="connected SD to |%pin"
-  void connect(Pins pin){
+  //% block="Connect SD to |%pin"
+  void connectx(Pins pin){
     printf("%i != %i?\r\n", pin, (PinName)pin);
     sd = new SDFileSystem(MOSI, MISO, SCK, (PinName)pin, "sd");
   }
